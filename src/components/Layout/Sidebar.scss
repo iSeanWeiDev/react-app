@@ -11,13 +11,14 @@
   padding-top: calc((100vh - 70px) / 2 - 250px);
   margin: auto;
   
-  icons {
-    margin-top: -5px
+  .icons {
+    margin-top: -8px;
   }
 
   .items {
     margin-bottom: 35px;
     font-size: 30px;
+    color: rgba(112,112,114,1);
     cursor: pointer;
   }
   .active {

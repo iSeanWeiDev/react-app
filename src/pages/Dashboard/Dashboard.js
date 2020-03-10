@@ -3,6 +3,7 @@ import Example1 from './Example1';
 import Example2 from './Example2';
 import Example3 from './Example3';
 import Example4 from './Example4';
+import './Dashboard.scss';
 
 const Dashboard = ({
   tabStatus
@@ -29,7 +30,7 @@ const Dashboard = ({
     return element;
   }
   return (
-    <div>
+    <div className="main">
       {dashboardElement()}
     </div>
   );
