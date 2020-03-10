@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
-import {Image, FormGroup} from 'react-bootstrap';
+import {FormGroup} from 'react-bootstrap';
+import {House, Gear, DocumentRichtext, Bookmark} from 'react-bootstrap-icons'
 import './Sidebar.scss'
 
-export default function Sidebar() {
+export default function Sidebar({
+  getTabStatus
+}) {
   const [tab, setTab] = useState(0);
   const handleSelectTab = index => {
     setTab(index);
+    getTabStatus(index);
   }
   return (
     <div className="sidebarWrapper">
@@ -13,7 +17,7 @@ export default function Sidebar() {
         <div 
           className={tab === 0 ? "text-center items active" : "text-center items"}
           onClick={()=>handleSelectTab(0)}>
-          <Image src="./images/assets/notification.png" />
+          <House className="icons"/>
         </div>
       </FormGroup>
 
@@ -21,7 +25,7 @@ export default function Sidebar() {
         <div 
           className={tab === 1 ? "text-center items active" : "text-center items"}
           onClick={()=>handleSelectTab(1)}>
-          <Image src="./images/assets/notification.png" />
+          <DocumentRichtext className="icons" />
         </div>
       </FormGroup>
 
@@ -29,7 +33,7 @@ export default function Sidebar() {
         <div 
           className={tab === 2 ? "text-center items active" : "text-center items"}
           onClick={()=>handleSelectTab(2)}>
-          <Image src="./images/assets/notification.png" />
+          <Bookmark className="icons" />
         </div>    
       </FormGroup>
 
@@ -37,7 +41,7 @@ export default function Sidebar() {
         <div 
           className={tab === 3 ? "text-center items active" : "text-center items"}
           onClick={()=>handleSelectTab(3)}>
-          <Image src="./images/assets/notification.png" />
+          <Gear className="icons" />
         </div>
       </FormGroup>
     </div>

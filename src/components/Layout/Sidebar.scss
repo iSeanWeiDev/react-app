@@ -8,17 +8,25 @@
   // top: 70;
   left: 0;
   overflow-x: hidden;
-  padding-top: calc((100vh - 70px) / 2 - 214px);
+  padding-top: calc((100vh - 70px) / 2 - 250px);
   margin: auto;
-  img {
-    width: 25px;
-    height: 25px;
+  
+  icons {
+    margin-top: -5px
   }
 
   .items {
     margin-bottom: 35px;
+    font-size: 30px;
+    cursor: pointer;
   }
   .active {
-    background-color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    border-color: #8300b1 !important;
+    color: #8300b1 !important;
+    border-right: 5px solid;
+    cursor: pointer;
+
   }
 }
