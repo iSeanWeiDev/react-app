@@ -1,0 +1,21 @@
+.sidebarWrapper {
+  width: 80px;
+  height: 100%;
+  border-right: 2px solid;
+  border-color: rgba(243, 244, 249, 1);
+  position: fixed;
+  z-index: 99;
+  // top: 70;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: calc((100vh - 70px) / 2 - 214px);
+  margin: auto;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .items {
+    margin-bottom: 35px;
+  }
+}

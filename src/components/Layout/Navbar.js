@@ -12,7 +12,7 @@ function Navbar() {
             src="./images/logo.png" />
         </Nav.Link>
       </Nav.Item>
-      <div clasName="form-inline">
+      <div className="form-inline">
         <div className="searchBar">
           <InputGroup>
             <InputGroup.Prepend>
@@ -20,7 +20,10 @@ function Navbar() {
             </InputGroup.Prepend>
             <FormControl
               placeholder="Search e.g. live instagram channel"
-              aria-label="search"
+              aria-label="search
+              input:focus {
+                outline: none;
+              }"
               aria-describedby="basic-addon1"
             />
           </InputGroup>

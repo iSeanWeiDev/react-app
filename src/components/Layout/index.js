@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 export default ({
     children
@@ -8,6 +8,6 @@ export default ({
     <div>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
     </div>
 )
