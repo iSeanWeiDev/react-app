@@ -28,6 +28,9 @@
     color: #8300b1 !important;
     border-right: 5px solid;
     cursor: pointer;
+  }
 
+  @media(max-width: 700px) {
+    display: none;
   }
 }

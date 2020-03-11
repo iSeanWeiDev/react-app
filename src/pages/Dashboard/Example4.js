@@ -10,9 +10,7 @@ const Example4 = () => {
 
   const handleSelectTab = index => {
     setTab(index);
-    // getTabStatus(index);
   }
-console.log(tab);
 
   const tabContent = () => {
     let element = <Users />;
